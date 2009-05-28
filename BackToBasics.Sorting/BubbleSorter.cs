@@ -1,5 +1,8 @@
 namespace BackToBasics.Sorting
 {
+    /// <summary>
+    /// Slowest but easiest to implement
+    /// </summary>
     public class BubbleSorter
     {
         public int [] Sort(int [] a)
@@ -25,7 +28,7 @@ namespace BackToBasics.Sorting
             return a;
         }
 
-        public int [] SortMethod2(int [] a)
+        public int [] Sort2(int [] a)
         {
             for (var i = a.Length - 1; i >= 0; i--)
             {

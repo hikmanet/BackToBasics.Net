@@ -35,7 +35,7 @@ namespace BackToBasics.Sorting.Tests
             const int number_of_numbers = 100;
             var sut = new BubbleSorter();
 
-            var list_of_numbers = sut.SortMethod2(CreateRandomArray(number_of_numbers));
+            var list_of_numbers = sut.Sort2(CreateRandomArray(number_of_numbers));
 
             Assert.True(list_of_numbers.IsSorted());
         }
