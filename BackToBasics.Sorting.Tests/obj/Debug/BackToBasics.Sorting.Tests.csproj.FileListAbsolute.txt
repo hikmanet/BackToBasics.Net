@@ -1,0 +1,9 @@
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\bin\Debug\BackToBasics.Sorting.Tests.dll
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\bin\Debug\BackToBasics.Sorting.Tests.pdb
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\bin\Debug\xunit.dll
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\bin\Debug\xunit.xml
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\obj\Debug\BackToBasics.Sorting.Tests.dll
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\obj\Debug\BackToBasics.Sorting.Tests.pdb
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\bin\Debug\BackToBasics.Sorting.dll
+C:\dev\projects\BackToBasics\BackToBasics.Sorting.Tests\bin\Debug\BackToBasics.Sorting.pdb
