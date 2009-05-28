@@ -7,12 +7,35 @@ namespace BackToBasics.Sorting.Tests
     public class BubbleSortTests
     {
         [Fact]
+        public void should_sort_in_place()
+        {
+            const int number_of_numbers = 100;
+            var sut = new BubbleSorter();
+
+            var numbers_to_sort = CreateRandomArray(number_of_numbers);
+            var list_of_sorted_numbers = sut.Sort(numbers_to_sort);
+
+            Assert.Same(numbers_to_sort, list_of_sorted_numbers);            
+        }
+
+        [Fact]
         public void should_sort_list()
         {
             const int number_of_numbers = 100;
             var sut = new BubbleSorter();
 
             var list_of_numbers = sut.Sort(CreateRandomArray(number_of_numbers));
+
+            Assert.True(list_of_numbers.IsSorted());
+        }
+
+        [Fact]
+        public void should_sort_list_with_method2()
+        {
+            const int number_of_numbers = 100;
+            var sut = new BubbleSorter();
+
+            var list_of_numbers = sut.SortMethod2(CreateRandomArray(number_of_numbers));
 
             Assert.True(list_of_numbers.IsSorted());
         }
