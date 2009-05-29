@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{196014F4-60FE-4283-999D-5C3AA67A57A0}</ProjectGuid>
+    <ProjectGuid>{8EDAB501-DF58-4047-8615-ED9C2045ED40}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BackToBasics.Sorting.Tests</RootNamespace>
-    <AssemblyName>BackToBasics.Sorting.Tests</AssemblyName>
+    <RootNamespace>BackToBasics.TestUtils</RootNamespace>
+    <AssemblyName>BackToBasics.TestUtils</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,24 +43,11 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="xunit, Version=1.4.9.1416, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty\xunit\xunit.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BubbleSortTests.cs" />
+    <Compile Include="ObjectMother.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BackToBasics.Sorting\BackToBasics.Sorting.csproj">
-      <Project>{534E2682-884C-40A4-B482-40581B589A66}</Project>
-      <Name>BackToBasics.Sorting</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BackToBasics.TestUtils\BackToBasics.TestUtils.csproj">
-      <Project>{8EDAB501-DF58-4047-8615-ED9C2045ED40}</Project>
-      <Name>BackToBasics.TestUtils</Name>
-    </ProjectReference>
+    <Compile Include="SortExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

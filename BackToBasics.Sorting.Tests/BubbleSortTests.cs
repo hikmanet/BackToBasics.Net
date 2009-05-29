@@ -1,5 +1,5 @@
-using System;
 using BackToBasics.Sorting.Implementations;
+using BackToBasics.TestUtils;
 using Xunit;
 
 namespace BackToBasics.Sorting.Tests
@@ -7,13 +7,20 @@ namespace BackToBasics.Sorting.Tests
 
     public class BubbleSortTests
     {
+        private readonly ObjectMother objectMother;
+
+        public BubbleSortTests()
+        {
+            objectMother = new ObjectMother();
+        }
+
         [Fact]
         public void should_sort_in_place()
         {
             const int number_of_numbers = 100;
             ISorter sut = new BubbleSorter();
 
-            var numbers_to_sort = CreateRandomArray(number_of_numbers);
+            var numbers_to_sort = objectMother.CreateRandomArray(number_of_numbers);
             var list_of_sorted_numbers = sut.Sort(numbers_to_sort);
 
             Assert.Same(numbers_to_sort, list_of_sorted_numbers);            
@@ -25,7 +32,7 @@ namespace BackToBasics.Sorting.Tests
             const int number_of_numbers = 100;
             ISorter sut = new BubbleSorter();
 
-            var list_of_numbers = sut.Sort(CreateRandomArray(number_of_numbers));
+            var list_of_numbers = sut.Sort(objectMother.CreateRandomArray(number_of_numbers));
 
             Assert.True(list_of_numbers.IsSorted());
         }
@@ -36,36 +43,9 @@ namespace BackToBasics.Sorting.Tests
             const int number_of_numbers = 100;
             ISorter sut = new EnhancedBubbleSorter();
 
-            var list_of_numbers = sut.Sort(CreateRandomArray(number_of_numbers));
+            var list_of_numbers = sut.Sort(objectMother.CreateRandomArray(number_of_numbers));
 
             Assert.True(list_of_numbers.IsSorted());
-        }
-
-        private int [] CreateRandomArray(int number_of_numbers)
-        {
-            var random = new Random();
-            var needs_sorting = new int[number_of_numbers];
-
-            for (var i = 0; i < number_of_numbers; i++)
-            {
-                needs_sorting[i] = random.Next(Int32.MinValue, Int32.MaxValue);
-            }
-
-            return needs_sorting;
-        }
-    }
-
-    public static class SortExtensions
-    {
-        public static bool IsSorted(this int [] array)
-        {
-            for(var i=1; i<array.Length; i++)
-            {
-                if (array[i - 1] > array[i])
-                    return false;
-            }
-
-            return true;
         }
     }
 }
