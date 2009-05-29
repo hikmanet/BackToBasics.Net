@@ -1,5 +1,0 @@
-C:\dev\projects\BackToBasics\BackToBasics.Sorting\bin\Debug\BackToBasics.Sorting.dll
-C:\dev\projects\BackToBasics\BackToBasics.Sorting\bin\Debug\BackToBasics.Sorting.pdb
-C:\dev\projects\BackToBasics\BackToBasics.Sorting\obj\Debug\ResolveAssemblyReference.cache
-C:\dev\projects\BackToBasics\BackToBasics.Sorting\obj\Debug\BackToBasics.Sorting.dll
-C:\dev\projects\BackToBasics\BackToBasics.Sorting\obj\Debug\BackToBasics.Sorting.pdb
