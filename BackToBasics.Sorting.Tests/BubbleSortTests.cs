@@ -31,10 +31,10 @@ namespace BackToBasics.Sorting.Tests
         }
 
         [Fact]
-        public void should_sort_list_with_method2()
+        public void should_sort_list_with_enhanced_bubble_sorter()
         {
             const int number_of_numbers = 100;
-            ISorter sut = new BubbleSorter();
+            ISorter sut = new EnhancedBubbleSorter();
 
             var list_of_numbers = sut.Sort(CreateRandomArray(number_of_numbers));
 
